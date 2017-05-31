@@ -99,3 +99,10 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#InteliJ files
+.idea/
+
+#project files
+output/
+source/
