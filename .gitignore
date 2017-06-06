@@ -106,3 +106,4 @@ ENV/
 #project files
 output/
 source/
+local_config

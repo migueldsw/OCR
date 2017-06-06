@@ -28,3 +28,9 @@ pip install pytesseract
 textract:
 apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev
 pip install textract
+
+ghostscript:
+[download source]https://www.ghostscript.com/download/gpdldnld.html
+[install]https://ghostscript.com/doc/9.15/Install.htm#Install_Unix
+
+workon

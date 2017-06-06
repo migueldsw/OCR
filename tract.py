@@ -2,13 +2,13 @@
 OCR with textract
 http://textract.readthedocs.io/en/stable/
 """
-from utils import get_files_list, write_file, set_encoding
+from utils import get_files_list, write_file, set_encoding, local_config
 import textract
 
 set_encoding()
 
-SOURCE_PATH = "./source/"
-OUTPUT_PATH = "./output/"
+SOURCE_PATH = local_config('original_files_path')
+OUTPUT_PATH = local_config('processed_files_path')
 files = get_files_list(SOURCE_PATH)
 
 for file_name in files:

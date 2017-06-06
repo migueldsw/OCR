@@ -1,2 +1,2 @@
 # OCR
-OCR using PyTesser
+OCR tasks using PyTesser and Textract

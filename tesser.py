@@ -4,12 +4,12 @@ OCR with PyTesser
 """
 import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter
-from utils import get_files_list, write_file, set_encoding
+from utils import get_files_list, write_file, set_encoding, local_config
 
 set_encoding()
 
-SOURCE_PATH = "./source/"
-OUTPUT_PATH = "./output/"
+SOURCE_PATH = local_config('original_files_path')
+OUTPUT_PATH = local_config('processed_files_path')
 files = get_files_list(SOURCE_PATH)
 
 # im = Image.open("./source/img4.png")
