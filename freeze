@@ -1,0 +1,30 @@
+appdirs==1.4.3
+argcomplete==1.8.2
+beautifulsoup4==4.6.0
+chardet==3.0.3
+docx2txt==0.6
+EbookLib==0.16
+lxml==3.7.3
+olefile==0.44
+packaging==16.8
+Pillow==4.1.1
+pyparsing==2.2.0
+pytesseract==0.1.7
+python-pptx==0.6.5
+six==1.10.0
+SpeechRecognition==3.6.5
+textract==1.5.0
+xlrd==1.0.0
+XlsxWriter==0.9.6
+
+-----------------------------------
+Installation instructions
+
+pytesseract:
+sudo apt-get install tesseract-ocr
+pip install Pillow
+pip install pytesseract
+
+textract:
+apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev
+pip install textract
