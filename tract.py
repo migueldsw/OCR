@@ -2,8 +2,10 @@
 OCR with textract
 http://textract.readthedocs.io/en/stable/
 """
-from utils import get_files_list, write_file
+from utils import get_files_list, write_file, set_encoding
 import textract
+
+set_encoding()
 
 SOURCE_PATH = "./source/"
 OUTPUT_PATH = "./output/"
@@ -20,4 +22,4 @@ for file_name in files:
         print ("File: %s" % file_name)
         text = textract.process(SOURCE_PATH + file_name)
     print text
-    write_file(OUTPUT_PATH + file_name.split('.')[0] + '.txt', text)
+    write_file(OUTPUT_PATH + '[TEXTRACT]_' + file_name.split('.')[0] + '.txt', text)
