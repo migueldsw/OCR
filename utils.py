@@ -30,10 +30,20 @@ def write_file(file_path_name, text, encode='utf-8'):
     f.close()
 
 
+def read_text_file(path):
+    """
+    Read each line of a given (path) file
+    :param path: file path
+    :return: list of lines(text)
+    """
+    f = open(path, 'r')
+    return [x.strip('\n') for x in f.readlines()]
+
+
 def local_config(value):
     """
     Get local configuration data
-    :param value: 'original_files_path' | 'processed_files_path'
+    :param value: 'original_files_path' | 'processed_files_path' | 'extracted_files_path'
     :return: the selected data string
     """
     f = open('local_config', 'r')
@@ -42,3 +52,5 @@ def local_config(value):
         return lines[0]
     elif value == 'processed_files_path':
         return lines[1]
+    elif value == 'extracted_files_path':
+        return lines[2]
